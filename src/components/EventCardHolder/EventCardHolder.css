@@ -1,0 +1,36 @@
+.grid {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    display: grid;
+    width: 70em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
+    align-items: start;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
+  @media only screen and (max-width: 60em) {
+    body {
+      padding: 3rem;
+    }
+  
+    .grid {
+    margin-left: 0;
+    margin-right: 0;
+    width: 0;
+    grid-gap: 3rem;
+    }
+  }
+  
